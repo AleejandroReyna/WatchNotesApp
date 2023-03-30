@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    var note = Note.dumpData[0]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("\(note.title) - \(note.createdAt)")
         }
         .padding()
     }
