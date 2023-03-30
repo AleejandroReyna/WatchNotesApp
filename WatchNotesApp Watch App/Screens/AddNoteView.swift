@@ -16,7 +16,7 @@ struct AddNoteView: View {
             guard text.isEmpty == false else {
                 return
             }
-            let note  = Note(title: text, createdAt: "2020-12-12")
+            let note  = Note(title: text)
             notes.append(note)
             text = ""
         }

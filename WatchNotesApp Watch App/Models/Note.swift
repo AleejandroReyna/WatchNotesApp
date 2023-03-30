@@ -7,12 +7,27 @@
 
 import Foundation
 
-struct Note {
+struct Note : Identifiable {
+    var id : UUID
     var title : String
     var createdAt : String
     
+    init(title : String) {
+        self.id = UUID()
+        self.title = title
+        self.createdAt = generateDate()
+    }
+    
     static var dumpData : [Note] = [
-        .init(title: "Fake Note", createdAt: "2020-12-12"),
-        .init(title: "Second Fake Note", createdAt: "2020-13-13")
+        .init(title: "Fake Note"),
+        .init(title: "Second Fake Note")
     ]
+}
+
+func generateDate() -> String {
+    let date = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .long
+    dateFormatter.timeStyle = .medium
+    return dateFormatter.string(from: date)
 }
