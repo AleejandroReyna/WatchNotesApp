@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Note : Identifiable {
+struct Note : Identifiable, Hashable {
     var id : UUID
     var title : String
     var createdAt : String
@@ -19,8 +19,10 @@ struct Note : Identifiable {
     }
     
     static var dumpData : [Note] = [
-        .init(title: "Fake Note"),
-        .init(title: "Second Fake Note")
+        .init(title: "Note 1"),
+        .init(title: "Note 2"),
+        .init(title: "Note 3"),
+        .init(title: "Note 4")
     ]
 }
 
