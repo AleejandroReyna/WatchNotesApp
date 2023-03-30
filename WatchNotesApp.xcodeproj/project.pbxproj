@@ -13,6 +13,7 @@
 		B58D55DA29D550B800BB6D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58D55D929D550B800BB6D76 /* Assets.xcassets */; };
 		B58D55DD29D550B800BB6D76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58D55DC29D550B800BB6D76 /* Preview Assets.xcassets */; };
 		B58D55E929D5538400BB6D76 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55E829D5538400BB6D76 /* Note.swift */; };
+		B58D55EC29D5553000BB6D76 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55EB29D5553000BB6D76 /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B58D55D929D550B800BB6D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58D55DC29D550B800BB6D76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B58D55E829D5538400BB6D76 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B58D55EB29D5553000BB6D76 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		B58D55D429D550B200BB6D76 /* WatchNotesApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B58D55EA29D5550C00BB6D76 /* Screens */,
 				B58D55E729D5535100BB6D76 /* Models */,
 				B58D55D529D550B200BB6D76 /* WatchNotesAppApp.swift */,
 				B58D55D729D550B200BB6D76 /* ContentView.swift */,
@@ -103,6 +106,14 @@
 				B58D55E829D5538400BB6D76 /* Note.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B58D55EA29D5550C00BB6D76 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B58D55EB29D5553000BB6D76 /* AddNoteView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			files = (
 				B58D55D829D550B200BB6D76 /* ContentView.swift in Sources */,
 				B58D55D629D550B200BB6D76 /* WatchNotesAppApp.swift in Sources */,
+				B58D55EC29D5553000BB6D76 /* AddNoteView.swift in Sources */,
 				B58D55E929D5538400BB6D76 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
