@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var note = Note.dumpData[0]
+    @State var path = NavigationPath()
     
     var body: some View {
-        VStack {
-            Text("\(note.title) - \(note.createdAt)")
+        NavigationStack(path: $path) {
+            NavigationLink("Add Note") {
+                AddNoteView()
+            }
+            NavigationLink("View Notes") {
+                NotesListView()
+            }
         }
-        .padding()
     }
 }
 
