@@ -15,6 +15,7 @@
 		B58D55E929D5538400BB6D76 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55E829D5538400BB6D76 /* Note.swift */; };
 		B58D55EC29D5553000BB6D76 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55EB29D5553000BB6D76 /* AddNoteView.swift */; };
 		B58D55EE29D55B6800BB6D76 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55ED29D55B6800BB6D76 /* NotesListView.swift */; };
+		B58D55F029D55D1B00BB6D76 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58D55EF29D55D1A00BB6D76 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B58D55E829D5538400BB6D76 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B58D55EB29D5553000BB6D76 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 		B58D55ED29D55B6800BB6D76 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		B58D55EF29D55D1A00BB6D76 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				B58D55EB29D5553000BB6D76 /* AddNoteView.swift */,
 				B58D55ED29D55B6800BB6D76 /* NotesListView.swift */,
+				B58D55EF29D55D1A00BB6D76 /* NoteDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				B58D55D829D550B200BB6D76 /* ContentView.swift in Sources */,
 				B58D55D629D550B200BB6D76 /* WatchNotesAppApp.swift in Sources */,
 				B58D55EC29D5553000BB6D76 /* AddNoteView.swift in Sources */,
+				B58D55F029D55D1B00BB6D76 /* NoteDetailView.swift in Sources */,
 				B58D55EE29D55B6800BB6D76 /* NotesListView.swift in Sources */,
 				B58D55E929D5538400BB6D76 /* Note.swift in Sources */,
 			);
