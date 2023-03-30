@@ -10,10 +10,17 @@ import SwiftUI
 struct NotesListView: View {
     var notes : [Note] = Note.dumpData
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(notes, id: \.self.id) { note in
-                Text("\(note.title) - \(note.createdAt)")
-                    .lineLimit(1)
+        NavigationStack {
+            ScrollView() {
+                ForEach(notes, id: \.self.id) { note in
+                    NavigationLink(value: note) {
+                        Text("\(note.title) - \(note.createdAt)")
+                            .lineLimit(1)
+                    }
+                }
+                .navigationDestination(for: Note.self) { note in
+                    NoteDetailView(note: note)
+                }
             }
         }
     }
